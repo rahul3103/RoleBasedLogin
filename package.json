@@ -2,7 +2,7 @@
   "name": "login",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://rahul3103.github.io/RoleBasedLogin",
+  "homepage": "https://rahul3103.github.io/RoleBasedLogin",
   "dependencies": {
     "@material-ui/core": "^3.6.2",
     "react": "^16.6.3",
