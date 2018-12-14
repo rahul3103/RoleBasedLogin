@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/RoleBasedLogin/precache-manifest.5ada6665381faf93fbedbb923f799a6c.js"
+  "/RoleBasedLogin/precache-manifest.08301b3c0b740ffc4e9373a6ad94e860.js"
 );
 
 workbox.clientsClaim();
