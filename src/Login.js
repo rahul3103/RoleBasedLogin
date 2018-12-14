@@ -1,10 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { TextField, Button, Grid, CircularProgress } from '@material-ui/core';
+import {
+  TextField,
+  Button,
+  Grid,
+  CircularProgress,
+  Card,
+  Typography,
+  CardContent
+} from '@material-ui/core';
 import { withRouter } from 'react-router';
-
 import { login } from './redux/action';
 
+const style = {
+  span: {
+    display: 'inline-block'
+  }
+};
 class Login extends React.Component {
   state = {
     username: '',
@@ -50,6 +62,27 @@ class Login extends React.Component {
         </Button>
         <br />
         <div style={{ color: 'red' }}>{this.props.loginError}</div>
+        <Card style={{ marginTop: 20 }}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              Rolse
+            </Typography>
+            <div style={{ display: 'flex' }}>
+              <div>
+                <span style={style.span}>Username: admin</span>
+                <span style={style.span}>Password: admin</span>
+              </div>
+              <div>
+                <span style={style.span}>Username: manager</span>
+                <span style={style.span}>Password: manager</span>
+              </div>
+              <div>
+                <span style={style.span}>Username: agent</span>
+                <span style={style.span}>Password: agent</span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     );
   };

@@ -21,26 +21,20 @@ export const login = (email, password) => {
   };
 };
 
-const setLoginPending = isLoginPending => {
-  return {
-    type: SET_LOGIN_PENDING,
-    isLoginPending
-  };
-};
+const setLoginPending = isLoginPending => ({
+  type: SET_LOGIN_PENDING,
+  isLoginPending
+});
 
-const setLoginSuccess = isLoginSuccess => {
-  return {
-    type: SET_LOGIN_SUCCESS,
-    isLoginSuccess
-  };
-};
+const setLoginSuccess = isLoginSuccess => ({
+  type: SET_LOGIN_SUCCESS,
+  isLoginSuccess
+});
 
-const setLoginError = loginError => {
-  return {
-    type: SET_LOGIN_ERROR,
-    loginError
-  };
-};
+const setLoginError = loginError => ({
+  type: SET_LOGIN_ERROR,
+  loginError
+});
 
 export const setUser = data => ({
   type: SET_USER,

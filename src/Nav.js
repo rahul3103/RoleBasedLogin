@@ -21,7 +21,7 @@ class Nav extends React.Component {
     return (
       <Router basename={process.env.PUBLIC_URL}>
         <div>
-          <Route exact path={`/`} component={Login} />
+          <Route exact path="/" component={Login} />
           <Route path="/agent" component={agent(Agent)} />
           <Route path="/manager" component={manager(Manager)} />
           <Route path="/admin" component={admin(Admin)} />
