@@ -65,7 +65,7 @@ class Login extends React.Component {
         <Card style={{ marginTop: 20 }}>
           <CardContent>
             <Typography variant="h5" component="h2">
-              Rolse
+              Roles
             </Typography>
             <div style={{ display: 'flex' }}>
               <div>
