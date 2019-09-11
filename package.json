@@ -9,9 +9,10 @@
     "react-dom": "^16.6.3",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "3.0.0",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "snyk": "^1.226.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,7 +20,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "browserslist": [
     ">0.2%",
@@ -32,5 +35,6 @@
     "eslint-plugin-prettier": "^3.0.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.15.3"
-  }
+  },
+  "snyk": true
 }
