@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://rahul3103.github.io/RoleBasedLogin",
   "dependencies": {
-    "@material-ui/core": "^3.6.2",
+    "@material-ui/core": "^4.12.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^6.0.0",
